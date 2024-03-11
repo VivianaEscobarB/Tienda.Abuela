@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="visual" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="747.0" spacing="10.0" style="-fx-background-color: #FFFACF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.quindio.laboratorio.Controllers.CRUDController">
+    <children>
+      <ImageView fitHeight="75.0" fitWidth="369.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../java/com/quindio/laboratorio/Images/LETRA.png" />
+         </image>
+      </ImageView>
+        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="592.0" spacing="10.0" style="-fx-background-color: #FFFACF;">
+            <children>
+            <Button mnemonicParsing="false" onAction="#volver" style="-fx-background-color: #FFFACF;" text="volver" textFill="#850006" underline="true">
+               <font>
+                  <Font name="Broadway" size="12.0" />
+               </font></Button>
+                <Button mnemonicParsing="false" onAction="#registerProduct" style="-fx-background-color: #FFFACF;" text="Registrar Producto" textFill="#070086" underline="true">
+               <font>
+                  <Font name="Broadway" size="12.0" />
+               </font></Button>
+                <Button mnemonicParsing="false" onAction="#registerClient" style="-fx-background-color: #FFFACF;" text="Registrar Cliente" textFill="#070086" underline="true">
+               <font>
+                  <Font name="Broadway" size="12.0" />
+               </font></Button>
+                <Button mnemonicParsing="false" onAction="#eliminarRegistro" style="-fx-background-color: #FFFACF;" text="Eliminar" textFill="#851a00" underline="true">
+               <font>
+                  <Font name="Broadway" size="12.0" />
+               </font></Button>
+                <Button mnemonicParsing="false" onAction="#editarRegistro" style="-fx-background-color: #FFFACF;" text="Editar" textFill="#070086" underline="true">
+               <font>
+                  <Font name="Broadway" size="12.0" />
+               </font></Button>
+            </children>
+        </HBox>
+        <TextField fx:id="nombreField" alignment="CENTER" promptText="Nombre del Cliente o Producto" style="-fx-background-color: #FFFACF;">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font></TextField>
+        <ListView fx:id="registrosListView" prefHeight="334.0" prefWidth="577.0" style="-fx-background-color: #FFFACF;" />
+    </children>
+</VBox>
